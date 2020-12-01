@@ -1,0 +1,38 @@
+#calculator
+#simple calculator
+
+
+
+def add(x,y):
+    return x+y
+def substract(x,y):
+    return x-y
+def multiplication(x,y):
+    return x*y
+def dev(x,y):
+    return x/y
+
+print("Choose from the following::")
+print("1.add")
+print("2,substract")
+print("3.multiplication")
+print("4,divide")
+
+
+
+while True:
+    choice=input("Please choose from the above options 1/2/3/4")
+    if choice in ('1','2','3','4','stop'):
+        num1=int(input("Enter 1st number:::"))
+        num2=int(input("Enter 2nd number:::"))
+        
+        if choice=='1':
+            print(add(num1,num2))
+        elif choice=='2':
+            print(substract(num1,num2))
+        elif choice=='3':
+            print (multiplication(num1,num2))
+        elif choice=='4':
+            print(dev(num1,num2))
+    else:
+        print("Invalid choice !!!!")
